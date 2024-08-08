@@ -6,19 +6,19 @@ interface PostOwnerProps {
     fullName: string;
     studentID: string;
     postDesc: string;
-    likeNum: number;
+    likes: number;
   }
   
   interface CommentProps {
     userImagePath: string;
     username: string;
     commentText: string;
-    likeNum: number;
+    likes: number;
     replies: ({
       username: string;
       userImagePath: string;
       replyText: string;
-      likeNum: number;
+      likes: number;
     } | undefined)[];
   }
   
@@ -26,7 +26,7 @@ interface PostOwnerProps {
     userImagePath?: string;
     username?: string;
     replyText?: string;
-    likeNum?: number;
+    likes?: number;
   }
   
   export type { PostOwnerProps, CommentProps, ReplyProps };
